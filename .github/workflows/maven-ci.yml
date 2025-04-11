@@ -67,7 +67,7 @@ jobs:
     - name: Update dependency graph
       uses: advanced-security/maven-dependency-submission-action@v3
       with: 
-        working-directory: ./
+        working-directory: ../
 
     - name: Restore cached build
       uses: actions/cache@v3
