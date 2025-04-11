@@ -66,6 +66,8 @@ jobs:
     # https://github.com/marketplace/actions/maven-dependency-tree-dependency-submission
     - name: Update dependency graph
       uses: advanced-security/maven-dependency-submission-action@v3
+      with: 
+        working-directory: ./
 
     - name: Restore cached build
       uses: actions/cache@v3
