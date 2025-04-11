@@ -63,6 +63,14 @@ jobs:
 
     steps:
 
+    - name: 🐛 Debug - Check current directory and pom.xml location
+      run: |
+        echo "Current directory is: $(pwd)"
+        echo "Contents of the current directory:"
+        ls -lah
+        echo "Looking for pom.xml:"
+        find . -name "pom.xml"
+
     # https://github.com/marketplace/actions/maven-dependency-tree-dependency-submission
     - name: Update dependency graph
       uses: advanced-security/maven-dependency-submission-action@v3
