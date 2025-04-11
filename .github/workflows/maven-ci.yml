@@ -37,6 +37,14 @@ jobs:
         distribution: 'zulu'
         cache: maven
 
+    - name: 🧪 Debug - Show working directory
+      run: |
+        echo "PWD: $(pwd)"
+        echo "Directory contents:"
+        ls -lah
+        echo "Find all pom.xml files:"
+        find . -name "pom.xml"
+
     - name: Test with Maven
       run: mvn test
 
