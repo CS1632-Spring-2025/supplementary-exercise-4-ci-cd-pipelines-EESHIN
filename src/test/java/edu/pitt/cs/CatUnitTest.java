@@ -35,7 +35,7 @@ public class CatUnitTest {
 		// Passing InstanceType.MOCK as the first parameter will create a mock cat using Mockito.
 		// Which type is the correct choice for this unit test?  I'll leave it up to you.  The answer is in the Unit Testing Part 2 lecture. :)
 		// TODO: Fill in
-		c = Cat.createInstance(InstanceType.MOCK, 1, "Jennyanydots");
+		c = Cat.createInstance(InstanceType.IMPL, 1, "Jennyanydots");
 	}
 
 	@After
